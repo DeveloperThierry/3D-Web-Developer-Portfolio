@@ -22,9 +22,6 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true); // Show loading state
 
-    console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY); // Add this line
-
-
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
