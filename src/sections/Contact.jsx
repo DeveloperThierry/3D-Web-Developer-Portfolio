@@ -20,7 +20,10 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    setLoading(true); // Show loading state
+
+    console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY); // Add this line
+
 
     try {
       await emailjs.sendForm(
@@ -30,11 +33,12 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
+      // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error);
+      console.error("EmailJS Error:", error); // Optional: show toast
     } finally {
-      setLoading(false);
+      setLoading(false); // Always stop loading, even on error
     }
   };
 
@@ -92,7 +96,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
