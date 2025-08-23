@@ -9,6 +9,7 @@ This repository contains the source code for a unique and interactive 3D web dev
 [3D Web Developer Portfolio](https://developerthierry.vercel.app/)
 _Check out the live version to see the portfolio in action!_
 
+
 ---
 
 ## Features
@@ -22,7 +23,7 @@ _Check out the live version to see the portfolio in action!_
 
 ---
 
-## Demo Images
+## Demo Images & Video
 
 Here are some example images of the sample portfolio's different views to give a better idea of the design and functionality.
 
@@ -34,6 +35,12 @@ Here are some example images of the sample portfolio's different views to give a
 ![Experience 2](public/README/experience2.png)
 ![Testimonials](public/README/testimonials.png)
 ![Contact](public/README/contact.png)
+<!-- 
+
+<video controls width="100%" height="auto">
+  <source src="public/README/demo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video> -->
 
 ---
 
