@@ -18,7 +18,7 @@ function App() {
       <FeatureCards/>
       <Experience/>
       <TechStack/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <Contact/>
       <Footer/>
     </>

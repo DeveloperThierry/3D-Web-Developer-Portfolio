@@ -53,31 +53,32 @@ const ShowcaseSection = () => {
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+              Get Hired Faster: Your Personal AI-Powered Resume Coach
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+              An intelligent platform that provides instant, actionable feedback to help you perfect your resume and stand out to employers.
               </p>
             </div>
           </div>
           {/* RIGHT */}
           <div className="project-list-wrapper overflow-hidden">
             <div ref={project2Ref} className="project">
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <div className="image-wrapper bg-[#FFEFDB] ">
                 <img
                   src="/images/project2.png"
                   alt="Library Management Platform"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Awwwards-Worthy Experiences: A Modern Website Built with React.js & GSAP</h2>
             </div>
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory" />
+                <img src="/images/project3.png" alt="YC Directory" 
+                className="w-full h-full object-cover "
+                 />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Condense Articles and Links with AI </h2>
             </div>
           </div>
         </div>
